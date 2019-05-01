@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<!--   http://colorpalettes.net/color-palette-3826/ color palette
+		http://colorpalettes.net/color-palette-3705/-->
+<!--<body bgcolor="#cb738d">-->
+    <head>
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="css/style.css">
+
+		<script>
+		
+		function validateForm()
+		{
+			if (document.forms["tamsForm"]["fname"].value==null || document.forms["tamsForm"]["fname"].value=="")
+				{
+					alert ("Please write your first name");
+					return false;
+				}
+				
+			if (document.forms["tamsForm"]["lname"].value==null || document.forms["tamsForm"]["lname"].value=="")
+				{
+					alert ("Please write your last name");
+					return false;
+				}
+			if (document.forms["tamsForm"]["msg"].value==null || document.forms["tamsForm"]["msg"].value=="")
+				{
+					alert ("Please write your message");
+					return false;
+				}
+			
+			return true;
+		}		
+		
+		</script>
+		
+    </head>
+
+	<header>
+	    <h1>Riikka Kilpeläinen <br> Portfolio</h1>
+	</header>
+<body>
+
+
+<nav>
+    <ul>                          
+        <div class="dropdown">
+            <li><button class="dropbtn"><b>Course</b></li>
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="course.html">Images</a>
+                <a href="lists.html">Lists</a>
+                <a href="table.html">Tables</a>
+                <a href="form.html">Forms</a>
+                <a href="location.html">Geolocation</a>
+                <a href="drag.html">Drag and Drop</a>
+                <a href="media.html">Media</a>
+            </div>
+        </div>                      
+                
+        <b>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="works.html">Games</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Other</a></li>
+        </b>        
+    </ul>
+</nav>
+
+	
+	<article>
+	
+	This is a form.
+	
+        <form name="tamsForm" onsubmit="return validateForm()">
+			<div>
+				<label for="fname">First Name:</label>
+				<br>
+				<input type="text" id="fname" name="user_fname">
+			</div>
+			<div>
+				<label for="lname">Last Name:</label>
+				<br>
+				<input type="text" id="lname" name="user_lname">
+			</div>
+			<div>
+				<label for="msg">Message:</label>
+				<br>
+				<textarea id="msg" name="user_message"></textarea>
+			</div>
+			
+			<div class="button">
+			<button type="submit">Send</button>
+			</div>
+        </form>
+
+	</article>
+
+</body>
+</html>

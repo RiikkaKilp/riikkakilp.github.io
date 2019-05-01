@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<!--   http://colorpalettes.net/color-palette-3826/ color palette
+		http://colorpalettes.net/color-palette-3705/-->
+<!--<body bgcolor="#cb738d">-->
+    <head>
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="css/style.css">
+    </head>
+
+	<header>
+	    <h1>Riikka Kilpelainen <br> Portfolio</h1>
+	</header>
+<body>
+
+
+    <nav>
+            <ul>
+            <b>
+                <li><a href="index.html">Main</a>
+                <li><a href="works.html">Games</a></li>
+                <li><a href="about.html">About</a></li>
+            </b>
+            </ul>
+    </nav>
+
+	
+	<article>
+		This is an article.
+		This is where content for the main page would go.
+	</article>
+
+</body>
+</html>

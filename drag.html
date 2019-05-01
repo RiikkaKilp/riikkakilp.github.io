@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<!--   http://colorpalettes.net/color-palette-3826/ color palette
+		http://colorpalettes.net/color-palette-3705/-->
+<!--<body bgcolor="#cb738d">-->
+    <head>
+		<title>Portfolio</title>
+		<link rel="stylesheet" href="css/style.css">
+    </head>
+
+	<header>
+	    <h1>Riikka Kilpeläinen <br> Portfolio</h1>
+	</header>
+
+<script>
+    function dropPossible(ev) {
+        ev.preventDefault();
+    }
+
+    function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+    }
+</script>
+    
+<body>
+<nav>
+    <ul>                          
+        <div class="dropdown">
+            <li><button class="dropbtn"><b>Course</b></li>
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="course.html">Images</a>
+                <a href="lists.html">Lists</a>
+                <a href="table.html">Tables</a>
+                <a href="form.html">Forms</a>
+                <a href="location.html">Geolocation</a>
+                <a href="drag.html">Drag and Drop</a>
+                <a href="media.html">Media</a>
+            </div>
+        </div>                      
+                
+        <b>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="works.html">Games</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Other</a></li>
+        </b>        
+    </ul>
+</nav>
+
+	
+	<article>
+        Drag and drop the image between the boxes.       
+        
+        <div id="div1" ondrop="drop(event)" ondragover="dropPossible(event)">
+            <img src="images/pinkspray.png" draggable="true" ondragstart="drag(event)" id="drag1" height="100" color="red">
+        </div>
+
+        <div id="div2" ondrop="drop(event)" ondragover="dropPossible(event)" height="500p">
+        </div>
+        
+        It's so tiny
+	
+    </article>
+
+</body>
+</html>
