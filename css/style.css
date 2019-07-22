@@ -7,8 +7,8 @@
         
 		body{ 
         /*font-family: 'Poiret One', cursive;*/
- 		background-color:#E3E2DF;       
-		color:#E3E2DF;
+ 		background-color:#eae7dc;       
+		/*color:#eae7dc;*/
 		}
         
         .rside {
@@ -190,11 +190,13 @@
 		text-decoration: none;
         margin: 20px;
 		color:#2c2826;
+		font-weight: bold;
 		}
 		
 		a:visited{
 		text-decoration: none;
 		color:#2c2826;
+		font-weight: bold;
 		}
         
         a:hover{
