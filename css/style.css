@@ -25,7 +25,16 @@
         float: right;
         padding: 30px;
         /*border: 1px solid red;*/
-        }    
+        }
+
+        .full {
+        width: 100%;
+        float: right;
+        padding: 30px;
+        padding-left: 10%;
+        padding-right : 10%;
+        /*border: 1px solid red;*/
+        }        
         
 		header{
         font-family: 'Poiret One', cursive;
@@ -47,6 +56,30 @@
         
         h3{
         font-size: 20px;
+        }
+        
+        table {
+        width: 100%;
+        border-collapse: collapse;
+        border-bottom-width: 0px;
+        border-color: red;
+        }
+
+        td {
+        vertical-align: bottom;
+        }
+        
+        th{
+        text-align: left;
+        vertical-align: top;
+        height: 50px;
+        }
+        
+        th, td {
+        font-weight: normal;
+        padding: 15px;
+        text-align: left;
+        padding-bottom: 30px;
         }
 		
 		nav{
@@ -218,3 +251,44 @@
 		ul li{
 		display: inline;
 		}
+        
+        .container {
+        position: relative;
+        width: 100%;
+        }
+        
+        .image {
+        display: block;
+        width: 100%;
+        height: auto;
+        }
+        
+        .overlay {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 0, 25, 0.2);
+        overflow: hidden;
+        overflow-wrap: break-word;
+        width: 100%;
+        height:0;
+        transition: .6s ease;
+        }
+        
+        .container:hover .overlay {
+        bottom: 0;
+        height: 100%;
+        }
+        
+        .text {
+        white-space: pre;
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        }
