@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const { Message } = require("discord.js");
 const {REST, Routes} = require("discord.js");
 
@@ -121,4 +123,4 @@ app.get('/', (req, res) => {
     res.send('<h1>Welcome to Express.js!</h1>');
 });
 
-client.login();
+client.login(process.env.TOKEN);

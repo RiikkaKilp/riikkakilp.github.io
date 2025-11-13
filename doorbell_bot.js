@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const { Client, Events, GatewayIntentBits } = require('discord.js');
 const client = new Client({ 
     intents: [
@@ -25,7 +27,7 @@ client.on(Events.InteractionCreate, async interaction => {
   }
 });
 
-client.login();
+client.login(process.env.TOKEN);
 
 app.get("/", function(request, response){
     response.writeHead(200, {"content-type":"text/html"});
